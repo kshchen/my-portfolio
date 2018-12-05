@@ -1,0 +1,119 @@
+html {
+    font-size: 18px;
+}
+
+.pad {
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+/* Nav */
+.navbar {
+    padding: 4rem 10rem;
+}
+
+.navbar a {
+    color: black;
+}
+
+.navbar-brand {
+    padding-left: 0;
+    font-family: 'Rochester', cursive;
+    font-size: 1.6rem;
+    color: #2FCECE;
+}
+
+.navbar-brand img {
+    width: 4rem;
+    height: 4rem;
+}
+
+.navbar-nav li{
+    font-family: 'Gudea', sans-serif;
+    font-size: 0.85rem;
+}
+
+.navbar-nav li a {
+    padding: 1rem 0 0 0;
+    margin-right: 2rem;
+}
+
+.navbar-nav li a:hover {
+    background-color: white;
+    border-bottom: 0.3rem solid #96E9E9;
+    transition: border-width 80ms ease-in;
+}
+
+.navbar-nav > .active > a {
+    border-bottom: 0.3rem solid #96E9E9;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        padding-right: 0;
+        padding-left: 2rem;
+    }
+    
+    .navbar-header {
+        margin-bottom: 3rem;
+        
+    }
+    
+    .navbar-nav li {
+        display: inline-block;
+        padding: 0;
+        float: none;
+        margin-left: 0.8rem;;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .navbar-header {
+        display: none;
+    }
+}
+
+/* Intro - Headtext */
+
+#intro {
+    margin-top: 10rem;
+    color: black;
+}
+
+#intro h1 {
+    font-size: 3rem;
+    font-family: 'BlinkMacSystemFont', sans-serif;
+    font-weight: 700;
+}
+
+#intro h2 {
+    font-family: 'Merriweather', serif;
+}
+
+@keyframes text_change {
+    0%   { content: 'designing beautiful things'; }
+    25%  { content: 'learning new technologies'; }
+    50%  { content: 'solving human problems'; }
+    75%  { content: 'making new friends'; }
+    100% { content: 'designing beautiful things'; }  
+}
+
+#intro span:before {
+    content: 'creating better experiences';
+    animation: text_change 8s linear infinite;
+    color: #2FCECE;
+}
+
+@media only screen and (max-width: 768px) {
+    #intro {
+        padding-right: 0;
+        padding-left: 2rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #intro {
+        display: none;
+    }
+}
